@@ -105,6 +105,12 @@ document.querySelector('#backward').addEventListener('click', () => {
 
 })
 
+elem.addEventListener('ended', () => {
+    play.setAttribute('class', 'fa-solid fa-3x fa-circle-play')
+    hide()
+
+})
+
 function show() {
     document.querySelector('#item2 img').style.display = 'inline';
 }
@@ -112,3 +118,4 @@ function show() {
 function hide() {
     document.querySelector('#item2 img').style.display = 'none';
 }
+
